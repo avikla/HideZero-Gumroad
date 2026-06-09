@@ -11,7 +11,7 @@ Google Apps Script add-on for Google Sheets. Hides/shows zeros on the active she
 
 ## Version
 
-Current version: **v1.1** (committed locally, `clasp push` pending)
+Current version: **v1.1** (pushed to Apps Script 2026-06-09)
 
 ## Files
 
@@ -35,7 +35,7 @@ Current version: **v1.1** (committed locally, `clasp push` pending)
 - **Action on approval:** Marketplace SDK → Store Listing → Submit for review
 - **Visibility:** Public
 - **Deployment ID:** `AKfycbwVcoqBOka9w9JnTClmOxKB1wpswwlm7hByIuXKFf3NdXY5Z0n_47T0OiZUtIcoSMQv`
-- **Script ID:** `1wPjDfUUDDBxcnHaK5RqwkA_Ny6s6Lv5h-_UrQSWNjtY9dZGrc39_K09J`
+- **Script ID:** `1byEEuX7MjxRMUaEKoJHXt0gE2J9eF23diyP_NiXSH5RnS9mROKLtsulK`
 - **Homepage:** https://hidezero.meteor.co.il
 - **Privacy policy:** https://hidezero.meteor.co.il/privacy.html
 - **GCP project number:** `114517382322`
