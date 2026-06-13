@@ -30,9 +30,9 @@ Current version: **v1.1** (pushed to Apps Script 2026-06-09)
 
 ## Marketplace
 
-- **Status:** v1.0 rejected 2026-05-23; store listing fixes applied (draft saved, NOT resubmitted)
-- **Blocker:** OAuth verification submitted 2026-05-23 — wait for Google Trust & Safety email at avi.klayman@gmail.com (1–4 weeks)
-- **Action on approval:** Marketplace SDK → Store Listing → Submit for review
+- **Status:** v1.1 resubmitted for review 2026-06-13; OAuth verification cleared by Google
+- **Blocker:** Awaiting Google Workspace Marketplace review (typically 3–5 business days)
+- **Action on approval:** Listing goes public automatically
 - **Visibility:** Public
 - **Deployment ID:** `AKfycbwVcoqBOka9w9JnTClmOxKB1wpswwlm7hByIuXKFf3NdXY5Z0n_47T0OiZUtIcoSMQv`
 - **Script ID:** `1byEEuX7MjxRMUaEKoJHXt0gE2J9eF23diyP_NiXSH5RnS9mROKLtsulK`
