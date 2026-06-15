@@ -31,6 +31,7 @@ Current version: **v1.1** (pushed to Apps Script 2026-06-09)
 ## Marketplace
 
 - **Status:** v1.1 resubmitted for review 2026-06-13; OAuth verification cleared by Google
+- **OAuth approved:** 2026-06-15 — all scopes verified (userinfo.email, spreadsheets.currentonly, script.external_request, userinfo.profile)
 - **Blocker:** Awaiting Google Workspace Marketplace review (typically 3–5 business days)
 - **Action on approval:** Listing goes public automatically
 - **Visibility:** Public
