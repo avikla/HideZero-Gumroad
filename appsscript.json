@@ -14,7 +14,7 @@
   "addOns": {
     "common": {
       "name": "HideZero for Google Sheets",
-      "logoUrl": "https://hidezero.meteor.co.il/icon-128.png"
+      "logoUrl": "https://www.gstatic.com/images/icons/material/system/2x/table_chart_black_48dp.png"
     },
     "sheets": {
       "homepageTrigger": {
