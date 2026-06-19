@@ -15,17 +15,17 @@ function getLicenseApiUrl_() {
 }
 
 /**
- * Returns the stored Gumroad license key for this spreadsheet, or null if not yet set.
- * Stored in DocumentProperties so it persists per spreadsheet (not per user/script).
+ * Returns the stored Gumroad license key for this user, or null if not yet set.
+ * Stored in UserProperties so it persists across all spreadsheets for this user.
  * @returns {string|null}
  */
 function getLicenseKey_() {
-  return PropertiesService.getDocumentProperties().getProperty('GUMROAD_LICENSE_KEY');
+  return PropertiesService.getUserProperties().getProperty('GUMROAD_LICENSE_KEY');
 }
 
 /**
  * Prompts the user to enter their Gumroad license key via a UI dialog.
- * Saves it to DocumentProperties if provided.
+ * Saves it to UserProperties if provided.
  * @returns {string|null} The entered key, or null if cancelled.
  */
 function promptForLicenseKey_() {
@@ -38,17 +38,17 @@ function promptForLicenseKey_() {
   if (result.getSelectedButton() !== ui.Button.OK) return null;
   var key = result.getResponseText().trim();
   if (!key) return null;
-  PropertiesService.getDocumentProperties().setProperty('GUMROAD_LICENSE_KEY', key);
-  Logger.log('[OK] License key saved to DocumentProperties.');
+  PropertiesService.getUserProperties().setProperty('GUMROAD_LICENSE_KEY', key);
+  Logger.log('[OK] License key saved to UserProperties.');
   return key;
 }
 
 /**
- * Deletes the stored Gumroad license key from DocumentProperties.
+ * Deletes the stored Gumroad license key from UserProperties.
  * Called by checkLicense_() on invalid key and by manageLicenseKey() on key reset.
  */
 function clearLicenseKey_() {
-  PropertiesService.getDocumentProperties().deleteProperty('GUMROAD_LICENSE_KEY');
+  PropertiesService.getUserProperties().deleteProperty('GUMROAD_LICENSE_KEY');
 }
 
 /**

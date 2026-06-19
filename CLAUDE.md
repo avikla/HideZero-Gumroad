@@ -78,7 +78,7 @@ No manual deployment needed — GitHub Actions handles it automatically on every
 - **`General` / `@`** normalise to `'0'` before format construction (cannot appear in multi-section formats)
 - **`General` → `0` after round-trip:** unavoidable; visually identical
 - **Batch API:** single `getNumberFormats()` + `setNumberFormats()` call each way — one API roundtrip
-- **License key storage:** `DocumentProperties` (per spreadsheet, not per user/script)
+- **License key storage:** `UserProperties` (per user, works across all their spreadsheets)
 - **License server URL:** `Script Properties` as `LICENSE_API_URL` — never hardcoded
 - **Fail policy:** fail-open on server errors; only explicit `activeSubscriber: false` blocks
 - **Private functions** end with `_`

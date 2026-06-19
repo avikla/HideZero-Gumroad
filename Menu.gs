@@ -125,6 +125,35 @@ function showHomepage() {
       .setContent(masked || 'No key stored')
   );
 
+  if (key) {
+    section.addWidget(
+      CardService.newButtonSet()
+        .addButton(
+          CardService.newTextButton()
+            .setText('Hide Zeros on Sheet')
+            .setOnClickAction(CardService.newAction().setFunctionName('hideZerosFromCard'))
+        )
+        .addButton(
+          CardService.newTextButton()
+            .setText('Show Zeros on Sheet')
+            .setOnClickAction(CardService.newAction().setFunctionName('showZerosFromCard'))
+        )
+    );
+    section.addWidget(
+      CardService.newButtonSet()
+        .addButton(
+          CardService.newTextButton()
+            .setText('Hide Zeros in Selection')
+            .setOnClickAction(CardService.newAction().setFunctionName('hideZerosInSelectionFromCard'))
+        )
+        .addButton(
+          CardService.newTextButton()
+            .setText('Show Zeros in Selection')
+            .setOnClickAction(CardService.newAction().setFunctionName('showZerosInSelectionFromCard'))
+        )
+    );
+  }
+
   section.addWidget(
     CardService.newButtonSet()
       .addButton(
@@ -219,5 +248,61 @@ function clearAndReenterKeyFromCard() {
   promptForLicenseKey_();
   return CardService.newActionResponseBuilder()
     .setNavigation(CardService.newNavigation().updateCard(showHomepage()))
+    .build();
+}
+
+/**
+ * Card button callback: hides zeros on the active sheet.
+ */
+function hideZerosFromCard() {
+  if (!checkLicense_()) return CardService.newActionResponseBuilder()
+    .setNotification(CardService.newNotification().setText('License required.'))
+    .build();
+  var modified = hideZerosOnSheet_();
+  return CardService.newActionResponseBuilder()
+    .setNotification(CardService.newNotification().setText(modified ? 'Zeros hidden on this sheet.' : 'Nothing to change.'))
+    .build();
+}
+
+/**
+ * Card button callback: shows zeros on the active sheet.
+ */
+function showZerosFromCard() {
+  if (!checkLicense_()) return CardService.newActionResponseBuilder()
+    .setNotification(CardService.newNotification().setText('License required.'))
+    .build();
+  var modified = showZerosOnSheet_();
+  return CardService.newActionResponseBuilder()
+    .setNotification(CardService.newNotification().setText(modified ? 'Zeros restored on this sheet.' : 'Nothing to change.'))
+    .build();
+}
+
+/**
+ * Card button callback: hides zeros in the current selection.
+ */
+function hideZerosInSelectionFromCard() {
+  if (!checkLicense_()) return CardService.newActionResponseBuilder()
+    .setNotification(CardService.newNotification().setText('License required.'))
+    .build();
+  var ranges = SpreadsheetApp.getActiveSheet().getActiveRangeList().getRanges();
+  var anyModified = false;
+  ranges.forEach(function(range) { if (hideZerosInRange_(range)) anyModified = true; });
+  return CardService.newActionResponseBuilder()
+    .setNotification(CardService.newNotification().setText(anyModified ? 'Zeros hidden in selection.' : 'Nothing to change.'))
+    .build();
+}
+
+/**
+ * Card button callback: shows zeros in the current selection.
+ */
+function showZerosInSelectionFromCard() {
+  if (!checkLicense_()) return CardService.newActionResponseBuilder()
+    .setNotification(CardService.newNotification().setText('License required.'))
+    .build();
+  var ranges = SpreadsheetApp.getActiveSheet().getActiveRangeList().getRanges();
+  var anyModified = false;
+  ranges.forEach(function(range) { if (showZerosInRange_(range)) anyModified = true; });
+  return CardService.newActionResponseBuilder()
+    .setNotification(CardService.newNotification().setText(anyModified ? 'Zeros restored in selection.' : 'Nothing to change.'))
     .build();
 }

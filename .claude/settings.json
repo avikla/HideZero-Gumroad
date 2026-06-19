@@ -3,7 +3,12 @@
     "allow": [
       "Bash(git pull *)",
       "Bash(git commit -m ' *)",
-      "Bash(git push *)"
+      "Bash(git push *)",
+      "Bash(ls -la \"C:\\\\Users\\\\Avi\\\\AppData\\\\Roaming\\\\Code\\\\User\\\\\" | grep -E '\\\\.\\(css|scss|less|json|jsonc\\)$|workbench|theme|color')",
+      "Read(//c/Users/Avi/AppData/Roaming/Code/User\" | grep -E '/**)"
+    ],
+    "additionalDirectories": [
+      "C:\\Users\\Avi\\.vscode"
     ]
   }
 }
