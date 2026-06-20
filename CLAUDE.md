@@ -7,6 +7,7 @@ Google Apps Script add-on for Google Sheets. Hides/shows zeros on the active she
 ## Product
 
 - **Gumroad product URL:** https://hidezero.gumroad.com/l/hidezero
+- **Price:** $4.90 USD (one-time)
 - **Gumroad product permalink:** `hidezero`
 
 ## Version
