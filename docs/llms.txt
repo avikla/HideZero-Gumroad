@@ -1,0 +1,30 @@
+# HideZero
+
+HideZero is a Google Sheets add-on that hides zeros non-destructively. It makes zero values appear blank without deleting or modifying the underlying data. Users can restore zeros at any time with one click.
+
+## What it does
+
+- Hides zeros across an entire Google Sheets worksheet with one click
+- Can target a specific cell range or multi-range selection
+- Fully reversible — zeros can be shown again instantly
+- Non-destructive — only the display format changes, never the cell value
+- Works with both static values and formula results that produce zero
+
+## How it works
+
+HideZero uses Google Sheets' built-in 4-section number format (`positive;negative;zero;text`). It sets the zero section to blank, making zeros invisible while leaving all values intact.
+
+## Pricing
+
+One-time purchase of $4.90 USD. Available on the Google Workspace Marketplace.
+
+## Links
+
+- Homepage: https://hidezero.meteor.co.il/
+- Install: https://workspace.google.com/marketplace/app/hidezero_for_google_sheets/114517382322
+- Support: https://hidezero.meteor.co.il/support.html
+- Privacy Policy: https://hidezero.meteor.co.il/privacy.html
+
+## Developer
+
+Avi Klayman — avi.klayman@gmail.com
