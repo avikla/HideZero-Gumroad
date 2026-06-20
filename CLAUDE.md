@@ -22,8 +22,11 @@ Current version: **v1.1** (pushed to Apps Script 2026-06-09)
 | `ZeroFormatter.gs` | Core format helpers + `hideZerosOnSheet_()` / `showZerosOnSheet_()` (thin wrappers) + `hideZerosInRange_()` / `showZerosInRange_()` (return bool) + unit tests |
 | `Menu.gs` | `onOpen()` menu, sheet-level + selection-level entry points, `manageLicenseKey()`, `showHomepage()` card + card callbacks |
 | `appsscript.json` | GAS manifest — scopes, urlFetchWhitelist, addOns.sheets, V8 runtime |
-| `PLAN.md` | Full implementation plan |
-| `site/` | Homepage + privacy policy (source of truth — auto-synced to `docs/` via GitHub Actions) |
+| `site/` | Homepage, privacy policy, terms of service, and support page (source of truth — auto-synced to `docs/` via GitHub Actions) |
+| `site/index.html` | Homepage with hero, features, how-it-works, CTA |
+| `site/privacy.html` | Privacy Policy |
+| `site/terms.html` | Terms of Service |
+| `site/support.html` | Support page (email CTA + FAQ) |
 | `docs/` | Deployed to GitHub Pages at hidezero.meteor.co.il (auto-synced from `site/` on every push) |
 | `.github/workflows/deploy-site.yml` | GitHub Actions: copies `site/` → `docs/`, deploys to GitHub Pages |
 | `CNAME` | DNS record: hidezero.meteor.co.il |
@@ -38,6 +41,8 @@ Current version: **v1.1** (pushed to Apps Script 2026-06-09)
 - **Script ID:** `1byEEuX7MjxRMUaEKoJHXt0gE2J9eF23diyP_NiXSH5RnS9mROKLtsulK`
 - **Homepage:** https://hidezero.meteor.co.il
 - **Privacy policy:** https://hidezero.meteor.co.il/privacy.html
+- **Terms of service:** https://hidezero.meteor.co.il/terms.html
+- **Support page:** https://hidezero.meteor.co.il/support.html
 - **GCP project number:** `114517382322`
 - **Draft tester:** avi.klayman@gmail.com
 
@@ -50,6 +55,17 @@ Current version: **v1.1** (pushed to Apps Script 2026-06-09)
   1. Copies `site/` → `docs/` on every push
   2. Deploys `docs/` to GitHub Pages
 - **Workflow:** Just edit `site/`, commit, and push — that's it! No manual copy step needed.
+
+## Website Design System
+
+All inner pages (privacy, terms, support) share the same design as the homepage:
+- **Hero:** `linear-gradient(135deg, #0f5c31 0%, #1a6b3c 60%, #22844b 100%)`, compact (56px top padding vs 72px on homepage)
+- **Nav bar:** dark green strip (`#0f5c31`) with `← HideZero` back-link
+- **Badge pill:** `rgba(255,255,255,.15)` background, `#c6f0d6` text
+- **Section headings:** `#1a6b3c`, uppercase, `letter-spacing: .06em`
+- **Body text:** `#444`, `line-height: 1.75`
+- **Footer:** shared across all 4 pages — links to Home, Privacy, Terms, Support + Google trademark disclaimer
+- CSS is inlined per-page (no shared stylesheet)
 
 ## Deployment
 
