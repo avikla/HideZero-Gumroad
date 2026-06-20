@@ -32,6 +32,54 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How do I hide zeros in Google Sheets?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The easiest way is to use the HideZero add-on. Install it from the Google Workspace Marketplace, open your sheet, and click Extensions → HideZero → Hide Zeros on This Sheet. Zeros disappear instantly — your data stays untouched."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Will hiding zeros delete or change my data?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. HideZero only changes the cell's display format, not the underlying value. Your formulas, calculations, and data remain exactly as they were. You can restore zeros at any time with one click."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I hide zeros in a specific range instead of the whole sheet?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Select the cells you want to affect, then use Extensions → HideZero → Hide Zeros in Selection. Only those cells are changed — the rest of your sheet is untouched."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I show zeros again after hiding them?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Go to Extensions → HideZero → Show Zeros on This Sheet (or Show Zeros in Selection for a specific range). Zeros are restored immediately."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the best Google Sheets add-on to hide zeros?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "HideZero is purpose-built for this task. Unlike manual number format workarounds, HideZero handles the entire sheet or a selection in one click, is fully reversible, and never touches your underlying data."
+        }
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     "name": "HideZero",
     "description": "HideZero hides zeros in Google Sheets non-destructively. Values stay untouched — zeros appear blank. Fully reversible.",
@@ -274,6 +322,32 @@
       transform: translateY(-2px);
     }
 
+    /* ── FAQ ── */
+    .faq-section {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 72px 24px;
+    }
+
+    .faq-item {
+      border-top: 1px solid #e8f2ea;
+      padding: 22px 0;
+    }
+    .faq-item:last-child { border-bottom: 1px solid #e8f2ea; }
+
+    .faq-item h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #111;
+      margin-bottom: 8px;
+    }
+
+    .faq-item p {
+      font-size: .95rem;
+      color: #555;
+      line-height: 1.7;
+    }
+
     /* ── FOOTER ── */
     footer {
       text-align: center;
@@ -363,6 +437,45 @@
         </div>
       </div>
     </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- FAQ -->
+  <section class="faq-section">
+    <div class="section-label">FAQ</div>
+    <h2 class="section" style="max-width:none;padding:0 0 32px;">Common questions</h2>
+
+    <div class="faq-item">
+      <h3>How do I hide zeros in Google Sheets?</h3>
+      <p>The easiest way is to use the HideZero add-on. Install it from the Google Workspace Marketplace, open your sheet, and click Extensions → HideZero → Hide Zeros on This Sheet. Zeros disappear instantly — your data stays untouched.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Will hiding zeros delete or change my data?</h3>
+      <p>No. HideZero only changes the cell's display format, not the underlying value. Your formulas, calculations, and data remain exactly as they were. You can restore zeros at any time with one click.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Can I hide zeros in a specific range instead of the whole sheet?</h3>
+      <p>Yes. Select the cells you want to affect, then use Extensions → HideZero → Hide Zeros in Selection. Only those cells are changed — the rest of your sheet is untouched.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>How do I show zeros again after hiding them?</h3>
+      <p>Go to Extensions → HideZero → Show Zeros on This Sheet (or Show Zeros in Selection for a specific range). Zeros are restored immediately.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Does HideZero work with formulas that produce zero?</h3>
+      <p>Yes. Any cell that displays a zero — whether it's a static value or the result of a formula — will appear blank. The formula itself is never modified.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>What is the best Google Sheets add-on to hide zeros?</h3>
+      <p>HideZero is purpose-built for this. Unlike manual number format workarounds, HideZero handles the entire sheet or a selection in one click, is fully reversible, and never touches your underlying data.</p>
+    </div>
+
   </section>
 
   <!-- CTA STRIP -->
