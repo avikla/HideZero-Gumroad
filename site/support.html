@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HideZero — Support</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #fff;
+      color: #111;
+      line-height: 1.6;
+    }
+
+    .site-nav {
+      background: #0f5c31;
+      padding: 14px 24px;
+    }
+    .site-nav a {
+      color: rgba(255,255,255,.8);
+      text-decoration: none;
+      font-size: .88rem;
+      font-weight: 600;
+      letter-spacing: .01em;
+      transition: color .15s;
+    }
+    .site-nav a:hover { color: #fff; }
+
+    .hero {
+      background: linear-gradient(135deg, #0f5c31 0%, #1a6b3c 60%, #22844b 100%);
+      color: #fff;
+      padding: 56px 24px 64px;
+      text-align: center;
+    }
+    .hero-badge {
+      display: inline-block;
+      background: rgba(255,255,255,.15);
+      border: 1px solid rgba(255,255,255,.25);
+      border-radius: 999px;
+      font-size: .78rem;
+      font-weight: 600;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      padding: 4px 14px;
+      margin-bottom: 20px;
+      color: #c6f0d6;
+    }
+    .hero h1 {
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      font-weight: 800;
+      letter-spacing: -.02em;
+      line-height: 1.1;
+      margin-bottom: 14px;
+    }
+    .hero p {
+      font-size: 1.05rem;
+      color: rgba(255,255,255,.8);
+      max-width: 480px;
+      margin: 0 auto;
+    }
+
+    .content {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 60px 24px 80px;
+    }
+    .content h2 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #1a6b3c;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      margin-top: 48px;
+      margin-bottom: 10px;
+    }
+    .content h2:first-child { margin-top: 0; }
+    .content p {
+      font-size: 1rem;
+      color: #444;
+      line-height: 1.75;
+      margin-bottom: 14px;
+    }
+    .content a { color: #1a6b3c; }
+    .content a:hover { color: #0f5c31; }
+
+    .contact-box {
+      background: #f3faf5;
+      border: 1px solid #d4edd9;
+      border-radius: 12px;
+      padding: 28px 28px;
+      margin-bottom: 48px;
+      text-align: center;
+    }
+    .contact-box p {
+      margin-bottom: 16px;
+      color: #333;
+    }
+    .btn-green {
+      display: inline-block;
+      background: #1a6b3c;
+      color: #fff;
+      font-weight: 700;
+      font-size: .95rem;
+      padding: 12px 26px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background .15s, transform .15s;
+    }
+    .btn-green:hover {
+      background: #0f5c31;
+      transform: translateY(-2px);
+    }
+
+    .faq { margin-top: 0; }
+    .faq-item { border-top: 1px solid #e8f2ea; padding: 22px 0; }
+    .faq-item:last-child { border-bottom: 1px solid #e8f2ea; }
+    .faq-item h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #111;
+      margin-bottom: 8px;
+    }
+    .faq-item p {
+      margin-bottom: 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 36px 24px;
+      font-size: .82rem;
+      color: #999;
+      border-top: 1px solid #e8f2ea;
+    }
+    footer a { color: #777; text-decoration: none; }
+    footer a:hover { color: #333; }
+    footer .links { margin-bottom: 10px; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+  </style>
+</head>
+<body>
+
+  <nav class="site-nav">
+    <a href="index.html">← HideZero</a>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-badge">Google Sheets™ Add-on</div>
+    <h1>Support</h1>
+    <p>Questions or issues? We usually reply within 24 hours.</p>
+  </section>
+
+  <div class="content">
+
+    <div class="contact-box">
+      <p>Email is the fastest way to reach us. Include your license key and a brief description of the issue.</p>
+      <a class="btn-green" href="mailto:avi.klayman@gmail.com">Email Support →</a>
+    </div>
+
+    <h2>Common questions</h2>
+
+    <div class="faq">
+
+      <div class="faq-item">
+        <h3>How do I install HideZero?</h3>
+        <p>Install directly from the <a href="https://workspace.google.com/marketplace/app/hidezero_for_google_sheets/114517382322" target="_blank" rel="noopener">Google Workspace Marketplace</a>. Once installed, open any Google Sheet and find HideZero under the <strong>Extensions</strong> menu.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Where do I get a license key?</h3>
+        <p>Purchase a license at <a href="https://hidezero.gumroad.com/l/hidezero" target="_blank" rel="noopener">hidezero.gumroad.com</a>. Gumroad sends your license key by email immediately after purchase.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>I lost my license key.</h3>
+        <p>Check your original Gumroad purchase email. If you can't find it, visit <a href="https://app.gumroad.com/library" target="_blank" rel="noopener">app.gumroad.com/library</a> and log in with the email address you used to purchase — your key is listed there.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>The add-on isn't appearing in the Extensions menu.</h3>
+        <p>Try refreshing the page. If it still doesn't appear, go to <strong>Extensions → Add-ons → Manage add-ons</strong> and confirm HideZero is listed and enabled.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>How do I update or clear my license key?</h3>
+        <p>Go to <strong>Extensions → HideZero → Manage License Key</strong>. From there you can enter a new key or clear the existing one.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Will hiding zeros affect my formulas?</h3>
+        <p>No. HideZero only changes the cell's display format — the underlying value is never touched. Formulas referencing those cells continue to work exactly as before.</p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <footer>
+    <div class="links">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+      <a href="support.html">Support</a>
+    </div>
+    <p>Google Sheets™ is a trademark of Google LLC. HideZero is not affiliated with or endorsed by Google.</p>
+  </footer>
+
+</body>
+</html>
