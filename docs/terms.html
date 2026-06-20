@@ -5,101 +5,180 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>HideZero — Terms of Service</title>
   <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 680px; margin: 60px auto; padding: 0 24px; color: #1a1a1a; line-height: 1.7; }
-    h1 { font-size: 2rem; margin-bottom: 4px; }
-    .updated { color: #888; font-size: 0.9rem; margin-bottom: 32px; }
-    h2 { font-size: 1.15rem; margin-top: 32px; }
-    footer { margin-top: 60px; font-size: 0.85rem; color: #888; border-top: 1px solid #eee; padding-top: 20px; }
-    footer a { color: #888; }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #fff;
+      color: #111;
+      line-height: 1.6;
+    }
+
+    .site-nav {
+      background: #0f5c31;
+      padding: 14px 24px;
+    }
+    .site-nav a {
+      color: rgba(255,255,255,.8);
+      text-decoration: none;
+      font-size: .88rem;
+      font-weight: 600;
+      letter-spacing: .01em;
+      transition: color .15s;
+    }
+    .site-nav a:hover { color: #fff; }
+
+    .hero {
+      background: linear-gradient(135deg, #0f5c31 0%, #1a6b3c 60%, #22844b 100%);
+      color: #fff;
+      padding: 56px 24px 64px;
+      text-align: center;
+    }
+    .hero-badge {
+      display: inline-block;
+      background: rgba(255,255,255,.15);
+      border: 1px solid rgba(255,255,255,.25);
+      border-radius: 999px;
+      font-size: .78rem;
+      font-weight: 600;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      padding: 4px 14px;
+      margin-bottom: 20px;
+      color: #c6f0d6;
+    }
+    .hero h1 {
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      font-weight: 800;
+      letter-spacing: -.02em;
+      line-height: 1.1;
+      margin-bottom: 14px;
+    }
+    .hero p {
+      font-size: 1.05rem;
+      color: rgba(255,255,255,.8);
+      max-width: 480px;
+      margin: 0 auto;
+    }
+
+    .content {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 60px 24px 80px;
+    }
+    .content h2 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #1a6b3c;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      margin-top: 48px;
+      margin-bottom: 10px;
+    }
+    .content h2:first-child { margin-top: 0; }
+    .content p {
+      font-size: 1rem;
+      color: #444;
+      line-height: 1.75;
+      margin-bottom: 14px;
+    }
+    .content ul {
+      color: #444;
+      font-size: 1rem;
+      line-height: 1.75;
+      padding-left: 20px;
+      margin-bottom: 14px;
+    }
+    .content ul li { margin-bottom: 6px; }
+    .content a { color: #1a6b3c; }
+    .content a:hover { color: #0f5c31; }
+
+    footer {
+      text-align: center;
+      padding: 36px 24px;
+      font-size: .82rem;
+      color: #999;
+      border-top: 1px solid #e8f2ea;
+    }
+    footer a { color: #777; text-decoration: none; }
+    footer a:hover { color: #333; }
+    footer .links { margin-bottom: 10px; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
   </style>
 </head>
 <body>
 
-  <h1>Terms of Service</h1>
-  <p class="updated">Last updated: June 2026</p>
+  <nav class="site-nav">
+    <a href="index.html">← HideZero</a>
+  </nav>
 
-  <p>
-    These Terms of Service ("Terms") govern your use of HideZero ("the add-on"), a Google Sheets™
-    add-on developed by Avi Klayman ("the developer"). By installing or using the add-on, you agree
-    to these Terms.
-  </p>
+  <section class="hero">
+    <div class="hero-badge">Google Sheets™ Add-on</div>
+    <h1>Terms of Service</h1>
+    <p>Simple, fair terms for a simple tool.</p>
+  </section>
 
-  <h2>1. License</h2>
-  <p>
-    Upon purchase of a valid license key, the developer grants you a non-exclusive, non-transferable,
-    personal license to install and use the add-on for your own internal business or personal purposes.
-    The license is tied to the license key and is valid for the subscription period you purchased.
-  </p>
+  <div class="content">
 
-  <h2>2. Permitted use</h2>
-  <p>
-    You may install the add-on in Google Sheets spreadsheets you own or are authorized to use.
-    You may not share, resell, sublicense, or redistribute your license key to other users.
-  </p>
+    <p>
+      These Terms of Service govern your use of HideZero ("the add-on"), a Google Sheets™
+      add-on developed by Avi Klayman. By installing or using the add-on, you agree to these terms.
+      Last updated: June 2026.
+    </p>
 
-  <h2>3. Restrictions</h2>
-  <p>You may not:</p>
-  <ul>
-    <li>Reverse-engineer, decompile, or attempt to extract the source code of the add-on</li>
-    <li>Use the add-on in a way that violates Google's Terms of Service or Workspace Marketplace policies</li>
-    <li>Share your license key with others or use a single key across multiple users</li>
-  </ul>
+    <h2>License</h2>
+    <p>
+      HideZero is sold as a one-time purchase via Gumroad. Your license key grants you a
+      personal, non-exclusive, non-transferable right to use the add-on on any Google Sheets
+      spreadsheet under your Google account.
+    </p>
 
-  <h2>4. Payment and refunds</h2>
-  <p>
-    Purchases are processed by <a href="https://gumroad.com" target="_blank">Gumroad</a>. Refund requests
-    are subject to Gumroad's refund policy. For refund inquiries, contact the developer at
-    <a href="mailto:avi.klayman@gmail.com">avi.klayman@gmail.com</a> within 14 days of purchase.
-  </p>
+    <h2>Permitted use</h2>
+    <ul>
+      <li>Use the add-on on your own spreadsheets for personal or business purposes.</li>
+      <li>Install it on multiple spreadsheets within your Google account.</li>
+    </ul>
 
-  <h2>5. Updates and availability</h2>
-  <p>
-    The developer may update, modify, or discontinue the add-on at any time. The developer will make
-    reasonable efforts to maintain compatibility with Google Sheets, but does not guarantee uninterrupted
-    availability.
-  </p>
+    <h2>Prohibited use</h2>
+    <ul>
+      <li>Sharing, selling, or distributing your license key to others.</li>
+      <li>Reverse-engineering, decompiling, or attempting to extract the add-on's source code.</li>
+      <li>Using the add-on in any way that violates Google's Terms of Service or applicable law.</li>
+    </ul>
 
-  <h2>6. Disclaimer of warranties</h2>
-  <p>
-    The add-on is provided "as is" without warranty of any kind. The developer makes no warranties,
-    express or implied, including but not limited to merchantability, fitness for a particular purpose,
-    or non-infringement.
-  </p>
+    <h2>No warranty</h2>
+    <p>
+      The add-on is provided "as is" without warranty of any kind. The developer makes no
+      guarantees that it will be error-free, uninterrupted, or compatible with every configuration
+      of Google Sheets.
+    </p>
 
-  <h2>7. Limitation of liability</h2>
-  <p>
-    To the fullest extent permitted by law, the developer shall not be liable for any indirect,
-    incidental, special, or consequential damages arising from your use of the add-on, even if
-    advised of the possibility of such damages. The developer's total liability shall not exceed
-    the amount you paid for the license.
-  </p>
+    <h2>Limitation of liability</h2>
+    <p>
+      To the fullest extent permitted by law, the developer shall not be liable for any indirect,
+      incidental, or consequential damages arising from your use of the add-on, including data
+      loss or spreadsheet errors.
+    </p>
 
-  <h2>8. Termination</h2>
-  <p>
-    Your license terminates automatically if you violate these Terms. Upon termination, you must
-    cease using the add-on and may clear your license key via "Manage License Key" in the add-on menu.
-  </p>
+    <h2>Changes to these terms</h2>
+    <p>
+      These terms may be updated from time to time. Continued use of the add-on after changes
+      are posted constitutes acceptance of the revised terms.
+    </p>
 
-  <h2>9. Governing law</h2>
-  <p>
-    These Terms are governed by the laws of the State of Israel. Any disputes shall be subject to
-    the exclusive jurisdiction of the courts of Israel.
-  </p>
+    <h2>Contact</h2>
+    <p>
+      Questions about these terms? Email <a href="mailto:avi.klayman@gmail.com">avi.klayman@gmail.com</a>.
+    </p>
 
-  <h2>10. Changes to these Terms</h2>
-  <p>
-    The developer may update these Terms from time to time. Continued use of the add-on after
-    changes are posted constitutes acceptance of the updated Terms.
-  </p>
-
-  <h2>Contact</h2>
-  <p>
-    For questions about these Terms, email
-    <a href="mailto:avi.klayman@gmail.com">avi.klayman@gmail.com</a>.
-  </p>
+  </div>
 
   <footer>
-    <p><a href="index.html">← Back to HideZero</a> &nbsp;·&nbsp; <a href="privacy.html">Privacy Policy</a></p>
+    <div class="links">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+      <a href="support.html">Support</a>
+    </div>
     <p>Google Sheets™ is a trademark of Google LLC. HideZero is not affiliated with or endorsed by Google.</p>
   </footer>
 
