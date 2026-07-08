@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /googled6c81a80d5eb67c3.html
 
 Sitemap: https://hidezero.meteor.co.il/sitemap.xml
