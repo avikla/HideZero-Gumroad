@@ -1,3 +1,5 @@
+.playwright-mcp/
+Video/
 .clasp.json
 .clasprc.json
 credentials.json
