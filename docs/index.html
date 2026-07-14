@@ -104,9 +104,24 @@
       line-height: 1.6;
     }
 
+    /* ── NAV ── */
+    .site-nav {
+      background: #22343a;
+      padding: 16px 24px;
+    }
+    .site-nav a { display: inline-flex; }
+    .site-nav .logo-chip {
+      background: #fff;
+      border-radius: 10px;
+      padding: 8px 18px;
+      display: inline-flex;
+      align-items: center;
+    }
+    .site-nav .logo-chip img { display: block; height: 32px; width: auto; }
+
     /* ── HERO ── */
     .hero {
-      background: linear-gradient(135deg, #0f5c31 0%, #1a6b3c 60%, #22844b 100%);
+      background: linear-gradient(135deg, #22343a 0%, #34505a 55%, #4f8890 100%);
       color: #fff;
       padding: 72px 24px 80px;
       text-align: center;
@@ -123,7 +138,7 @@
       text-transform: uppercase;
       padding: 4px 14px;
       margin-bottom: 20px;
-      color: #c6f0d6;
+      color: #cfe8ea;
     }
 
     .hero h1 {
@@ -134,7 +149,7 @@
       margin-bottom: 18px;
     }
 
-    .hero h1 span { color: #7fffa8; }
+    .hero h1 span { color: #8cd1d9; }
 
     .hero p {
       font-size: 1.15rem;
@@ -146,7 +161,7 @@
     .btn-primary {
       display: inline-block;
       background: #fff;
-      color: #0f5c31;
+      color: #22343a;
       font-weight: 700;
       font-size: 1rem;
       padding: 14px 30px;
@@ -186,7 +201,7 @@
       font-weight: 700;
       letter-spacing: .1em;
       text-transform: uppercase;
-      color: #1a6b3c;
+      color: #34505a;
       margin-bottom: 10px;
     }
 
@@ -212,8 +227,8 @@
     }
 
     .card {
-      background: #f8fdf9;
-      border: 1px solid #d4edd9;
+      background: #f5fafb;
+      border: 1px solid #d7e7e9;
       border-radius: 12px;
       padding: 24px 20px;
     }
@@ -239,7 +254,7 @@
     /* ── DIVIDER ── */
     .divider {
       border: none;
-      border-top: 1px solid #e8f2ea;
+      border-top: 1px solid #e5eef0;
       margin: 0 24px;
     }
 
@@ -261,7 +276,7 @@
       flex-shrink: 0;
       width: 34px;
       height: 34px;
-      background: #1a6b3c;
+      background: #34505a;
       color: #fff;
       border-radius: 50%;
       display: flex;
@@ -284,9 +299,9 @@
 
     /* ── CTA STRIP ── */
     .cta-strip {
-      background: #f3faf5;
-      border-top: 1px solid #d4edd9;
-      border-bottom: 1px solid #d4edd9;
+      background: #f0f7f8;
+      border-top: 1px solid #d7e7e9;
+      border-bottom: 1px solid #d7e7e9;
       text-align: center;
       padding: 64px 24px;
     }
@@ -305,7 +320,7 @@
 
     .btn-green {
       display: inline-block;
-      background: #1a6b3c;
+      background: #34505a;
       color: #fff;
       font-weight: 700;
       font-size: 1rem;
@@ -315,7 +330,7 @@
       transition: background .15s, transform .15s;
     }
     .btn-green:hover {
-      background: #0f5c31;
+      background: #22343a;
       transform: translateY(-2px);
     }
 
@@ -327,10 +342,10 @@
     }
 
     .faq-item {
-      border-top: 1px solid #e8f2ea;
+      border-top: 1px solid #e5eef0;
       padding: 22px 0;
     }
-    .faq-item:last-child { border-bottom: 1px solid #e8f2ea; }
+    .faq-item:last-child { border-bottom: 1px solid #e5eef0; }
 
     .faq-item h3 {
       font-size: 1rem;
@@ -359,6 +374,11 @@
   </style>
 </head>
 <body>
+
+  <!-- NAV -->
+  <nav class="site-nav">
+    <a href="/"><span class="logo-chip"><img src="logo.png" alt="HideZero" width="90" height="32" /></span></a>
+  </nav>
 
   <!-- HERO -->
   <section class="hero">
