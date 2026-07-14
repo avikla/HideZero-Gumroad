@@ -27,21 +27,21 @@
     }
 
     .site-nav {
-      background: #0f5c31;
-      padding: 14px 24px;
+      background: #22343a;
+      padding: 12px 24px;
     }
-    .site-nav a {
-      color: rgba(255,255,255,.8);
-      text-decoration: none;
-      font-size: .88rem;
-      font-weight: 600;
-      letter-spacing: .01em;
-      transition: color .15s;
+    .site-nav a { display: inline-flex; }
+    .site-nav .logo-chip {
+      background: #fff;
+      border-radius: 10px;
+      padding: 8px 18px;
+      display: inline-flex;
+      align-items: center;
     }
-    .site-nav a:hover { color: #fff; }
+    .site-nav .logo-chip img { display: block; height: 32px; width: auto; }
 
     .hero {
-      background: linear-gradient(135deg, #0f5c31 0%, #1a6b3c 60%, #22844b 100%);
+      background: linear-gradient(135deg, #22343a 0%, #34505a 55%, #4f8890 100%);
       color: #fff;
       padding: 56px 24px 64px;
       text-align: center;
@@ -57,7 +57,7 @@
       text-transform: uppercase;
       padding: 4px 14px;
       margin-bottom: 20px;
-      color: #c6f0d6;
+      color: #cfe8ea;
     }
     .hero h1 {
       font-size: clamp(1.8rem, 4vw, 2.8rem);
@@ -81,7 +81,7 @@
     .content h2 {
       font-size: 1.05rem;
       font-weight: 700;
-      color: #1a6b3c;
+      color: #34505a;
       text-transform: uppercase;
       letter-spacing: .06em;
       margin-top: 48px;
@@ -94,12 +94,12 @@
       line-height: 1.75;
       margin-bottom: 14px;
     }
-    .content a { color: #1a6b3c; }
-    .content a:hover { color: #0f5c31; }
+    .content a { color: #34505a; }
+    .content a:hover { color: #22343a; }
 
     .contact-box {
-      background: #f3faf5;
-      border: 1px solid #d4edd9;
+      background: #f0f7f8;
+      border: 1px solid #d7e7e9;
       border-radius: 12px;
       padding: 28px 28px;
       margin-bottom: 48px;
@@ -109,9 +109,9 @@
       margin-bottom: 16px;
       color: #333;
     }
-    .btn-green {
+    a.btn-green {
       display: inline-block;
-      background: #1a6b3c;
+      background: #34505a;
       color: #fff;
       font-weight: 700;
       font-size: .95rem;
@@ -120,14 +120,15 @@
       text-decoration: none;
       transition: background .15s, transform .15s;
     }
-    .btn-green:hover {
-      background: #0f5c31;
+    a.btn-green:hover {
+      background: #22343a;
+      color: #fff;
       transform: translateY(-2px);
     }
 
     .faq { margin-top: 0; }
-    .faq-item { border-top: 1px solid #e8f2ea; padding: 22px 0; }
-    .faq-item:last-child { border-bottom: 1px solid #e8f2ea; }
+    .faq-item { border-top: 1px solid #e5eef0; padding: 22px 0; }
+    .faq-item:last-child { border-bottom: 1px solid #e5eef0; }
     .faq-item h3 {
       font-size: 1rem;
       font-weight: 700;
@@ -143,7 +144,7 @@
       padding: 36px 24px;
       font-size: .82rem;
       color: #999;
-      border-top: 1px solid #e8f2ea;
+      border-top: 1px solid #e5eef0;
     }
     footer a { color: #777; text-decoration: none; }
     footer a:hover { color: #333; }
@@ -153,7 +154,7 @@
 <body>
 
   <nav class="site-nav">
-    <a href="/">← HideZero</a>
+    <a href="/"><span class="logo-chip"><img src="logo.png" alt="HideZero" width="90" height="32" /></span></a>
   </nav>
 
   <section class="hero">

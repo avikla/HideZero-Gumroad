@@ -28,6 +28,9 @@ Current version: **v1.1** (pushed to Apps Script 2026-06-09)
 | `site/privacy.html` | Privacy Policy |
 | `site/terms.html` | Terms of Service |
 | `site/support.html` | Support page (email CTA + FAQ) |
+| `site/theme.md` | Design system source of truth — palette tokens, logo/favicon usage |
+| `site/logo.png` | Nav logo lockup (icon + wordmark), 480×170 |
+| `site/favicon.png` | Favicon, 128×128, cropped from the icon mark only |
 | `docs/` | Deployed to GitHub Pages at hidezero.meteor.co.il (auto-synced from `site/` on every push) |
 | `.github/workflows/deploy-site.yml` | GitHub Actions: copies `site/` → `docs/`, deploys to GitHub Pages |
 | `CNAME` | DNS record: hidezero.meteor.co.il |
@@ -59,14 +62,17 @@ Current version: **v1.1** (pushed to Apps Script 2026-06-09)
 
 ## Website Design System
 
+Full token table and origin notes live in `site/theme.md` — this is the summary.
+
 All inner pages (privacy, terms, support) share the same design as the homepage:
-- **Hero:** `linear-gradient(135deg, #0f5c31 0%, #1a6b3c 60%, #22844b 100%)`, compact (56px top padding vs 72px on homepage)
-- **Nav bar:** dark green strip (`#0f5c31`) with `← HideZero` back-link
-- **Badge pill:** `rgba(255,255,255,.15)` background, `#c6f0d6` text
-- **Section headings:** `#1a6b3c`, uppercase, `letter-spacing: .06em`
+- **Hero:** `linear-gradient(135deg, #22343a 0%, #34505a 55%, #4f8890 100%)`, compact (56px top padding vs 72px on homepage)
+- **Nav bar:** dark slate-teal strip (`#22343a`) with a white chip wrapping `logo.png`, linking to `/`
+- **Badge pill:** `rgba(255,255,255,.15)` background, `#cfe8ea` text
+- **Section headings:** `#34505a`, uppercase, `letter-spacing: .06em`
 - **Body text:** `#444`, `line-height: 1.75`
 - **Footer:** shared across all 4 pages — links to Home, Privacy, Terms, Support + Google trademark disclaimer
 - CSS is inlined per-page (no shared stylesheet)
+- Palette derived from `Images/HideZero new logo.png` (teal/slate icon + wordmark, replaced the original green theme in 2026-07)
 
 ## Deployment
 
