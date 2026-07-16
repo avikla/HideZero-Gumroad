@@ -40,6 +40,7 @@ Current version: **v1.1** (pushed to Apps Script 2026-06-09)
 - **Status:** Approved and published on Google Workspace Marketplace 2026-06-17
 - **Marketplace URL:** https://workspace.google.com/marketplace/app/hidezero_for_google_sheets/114517382322
 - **OAuth approved:** 2026-06-15 — all scopes verified (userinfo.email, spreadsheets.currentonly, script.external_request, userinfo.profile)
+- **Brand verification approved:** 2026-07-16 — Google approved OAuth App Verification for brand verification (project 114517382322)
 - **Visibility:** Public
 - **Deployment ID:** `AKfycbwVcoqBOka9w9JnTClmOxKB1wpswwlm7hByIuXKFf3NdXY5Z0n_47T0OiZUtIcoSMQv`
 - **Script ID:** `1byEEuX7MjxRMUaEKoJHXt0gE2J9eF23diyP_NiXSH5RnS9mROKLtsulK`
